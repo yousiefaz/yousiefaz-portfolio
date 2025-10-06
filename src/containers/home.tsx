@@ -1,4 +1,5 @@
 import { buttonVariants } from "@/components/ui/button";
+import { Effect } from "@/components/ui/effects";
 import { socialLinks } from "@/constants/social-links";
 import { ArrowRightCircle, Download } from "lucide-react";
 import Image from "next/image";
@@ -37,7 +38,7 @@ const HomeSection = () => {
           technologies, turning ideas into seamless digital experiences.
         </p>
 
-        <p className="text-sm md:text-base italic text-center md:text-start text-primary">
+        <p className="text-sm md:text-base italic text-center md:text-start text-primary cursor-default">
           &ldquo; Made with love &lt;3 &rdquo;
         </p>
 
@@ -62,6 +63,10 @@ const HomeSection = () => {
       {/* Image */}
       <div className="md:col-span-5 grid place-content-center">
         <div className="relative flex items-center justify-center size-80 md:size-96">
+          <Effect className="opacity-75 size-full" />
+          {/* <Effect variant={""} className="size-full" />
+          <Effect className="size-full" />
+          <Effect className="size-full" /> */}
           <Image
             src="/images/profile-pic.jpg"
             alt="profile picture"

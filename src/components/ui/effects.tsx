@@ -1,6 +1,9 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import React from "react";
+import { motion, type HTMLMotionProps } from "framer-motion";
 
 const effectVariants = cva("absolute -z-50 opacity-40", {
   variants: {
@@ -23,14 +26,17 @@ const effectVariants = cva("absolute -z-50 opacity-40", {
 });
 
 export interface EffectsProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends HTMLMotionProps<"figure">,
     VariantProps<typeof effectVariants> {}
 
 const Effect = React.forwardRef<HTMLDivElement, EffectsProps>(
   ({ className, variant, size, ...props }, ref) => (
-    <figure
+    <motion.figure
       className={cn(effectVariants({ variant, size, className }))}
       ref={ref}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 1.7, ease: "easeOut" }}
       {...props}
     />
   )
