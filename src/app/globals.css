@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.container {
+  @apply max-w-6xl mx-auto px-4; /* Tailwind utilities */
+}

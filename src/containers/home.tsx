@@ -64,14 +64,12 @@ const HomeSection = () => {
       <div className="md:col-span-5 grid place-content-center">
         <div className="relative flex items-center justify-center size-80 md:size-96">
           <Effect className="opacity-75 size-full" />
-          {/* <Effect variant={""} className="size-full" />
-          <Effect className="size-full" />
-          <Effect className="size-full" /> */}
+
           <Image
             src="/images/profile-pic.jpg"
             alt="profile picture"
-            width={420}
-            height={420}
+            width={10}
+            height={10}
             className="object-fill rounded-full border-2 size-[80%] ring-4 ring-primary ring-offset-4 ring-offset-background"
           />
         </div>

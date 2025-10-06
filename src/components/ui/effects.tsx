@@ -9,7 +9,7 @@ const effectVariants = cva("absolute -z-50 opacity-40", {
   variants: {
     variant: {
       default:
-        "rounded-full blur-xl bg-gradient-to-tr from-primary/70 via-primary/30 to-transparent",
+        "rounded-full blur-xl bg-gradient-to-tr from-primary/70 via-primary/50 to-transparent",
       square: "border-2 border-muted-foreground z-10 opacity-100",
       ball: "rounded-full bg-gradient-to-tr from-primary/80 to-transparent",
     },
