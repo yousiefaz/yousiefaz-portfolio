@@ -6,7 +6,7 @@ import { buttonVariants } from "../ui/button";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="border-t pt-4 pb-28 md:pb-4">
+    <footer className="border-t pt-4 pb-24 md:pb-4 z-50">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-y-4">
         <p className="capitalize text-sm">
           {`© ${currentYear} Yaz. All rights reserved.`}
