@@ -63,7 +63,7 @@ const HomeSection = () => {
       {/* Image */}
       <div className="md:col-span-5 grid place-content-center -z-10">
         <div className="relative flex items-center justify-center size-80 md:size-96">
-          <Effect className="opacity-75 size-full animate-float" />
+          <Effect className="opacity-75 size-full animate-float" opacity={1} />
           <Effect
             variant="square"
             size="sm"

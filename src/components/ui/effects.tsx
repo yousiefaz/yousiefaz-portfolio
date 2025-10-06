@@ -3,12 +3,13 @@ import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import React from "react";
 import { motion, type HTMLMotionProps } from "framer-motion";
-const effectVariants = cva("absolute -z-50 opacity-40", {
+
+const effectVariants = cva("absolute -z-50", {
   variants: {
     variant: {
       default:
         "rounded-full blur-xl bg-gradient-to-tr from-primary/60 via-primary/30 to-transparent",
-      square: "border-2 border-muted-foreground z-10 opacity-100",
+      square: "border-2 border-muted-foreground z-10",
       ball: "rounded-full bg-gradient-to-tr from-primary/80 to-transparent",
     },
     size: {
@@ -19,20 +20,30 @@ const effectVariants = cva("absolute -z-50 opacity-40", {
   },
   defaultVariants: { variant: "default", size: "lg" },
 });
+
 export interface EffectsProps
   extends HTMLMotionProps<"figure">,
-    VariantProps<typeof effectVariants> {}
+    VariantProps<typeof effectVariants> {
+  animateIn?: boolean;
+  opacity?: number; // 👈 add opacity control (0–1)
+}
+
 const Effect = React.forwardRef<HTMLDivElement, EffectsProps>(
-  ({ className, variant, size, ...props }, ref) => (
+  (
+    { className, variant, size, animateIn = true, opacity = 0.4, ...props },
+    ref
+  ) => (
     <motion.figure
       className={cn(effectVariants({ variant, size, className }))}
       ref={ref}
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1.7, ease: "easeOut" }}
+      style={{ opacity }} // 👈 use opacity dynamically
+      initial={animateIn ? { scale: 0, opacity: 0 } : { scale: 1, opacity }}
+      animate={{ scale: 1, opacity }}
+      transition={animateIn ? { duration: 1.7, ease: "easeOut" } : undefined}
       {...props}
     />
   )
 );
+
 Effect.displayName = "Effect";
 export { Effect, effectVariants };

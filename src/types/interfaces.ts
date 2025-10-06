@@ -8,3 +8,8 @@ export interface SocialLink {
 export interface NavLink extends SocialLink {
   title: string;
 }
+
+export interface Staistics {
+  label: string;
+  value: number;
+}
