@@ -1,18 +1,17 @@
+import HomeSection from "@/containers/home";
+import AboutSection from "@/containers/about";
+import ContactSection from "@/containers/contact";
+import ProjectsSection from "@/containers/projects";
+import SkillsSection from "@/containers/skills";
+
 export default function Home() {
   return (
-    <>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facilis
-        modi consequatur quaerat perferendis. Eaque, saepe quod. Cupiditate,
-        sequi maiores saepe unde repudiandae eveniet dignissimos repellendus sed
-        culpa, obcaecati quos!
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facilis
-        modi consequatur quaerat perferendis. Eaque, saepe quod. Cupiditate,
-        sequi maiores saepe unde repudiandae eveniet dignissimos repellendus sed
-        culpa, obcaecati quos!
-      </div>
-    </>
+    <div className="container space-y-16 py-28">
+      <HomeSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+    </div>
   );
 }

@@ -11,6 +11,11 @@ const Footer = () => {
         <p className="capitalize text-sm">
           {`© ${currentYear} Yaz. All rights reserved.`}
         </p>
+
+        {/* <p className="capitalize text-sm text-center pt-4 lg:text-start text-primary">
+          made with love{"<3"}
+        </p> */}
+
         <div className="flex items-center gap-2">
           {socialLinks.map((link, index) => {
             const { href, icon: Icon } = link;
@@ -30,9 +35,6 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <p className="capitalize text-sm text-center pt-4 lg:text-start text-primary">
-        made with love{"<3"}
-      </p>
     </footer>
   );
 };

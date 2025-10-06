@@ -47,8 +47,7 @@ export default function RootLayout({
         >
           <Navbar />
           <MobileNav />
-
-          {children}
+          <main className="pt-12 mt-0">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
