@@ -6,15 +6,15 @@ export default defineType({
   title: "Skills",
   fields: [
     defineField({
-      name: "lable",
-      title: "Lable",
+      name: "label",
       type: "string",
+      title: "Label",
       validation: (Rule) => [Rule.required().min(3).max(50)],
     }),
     defineField({
       name: "value",
-      title: "Percentage",
       type: "number",
+      title: "Percentage",
       validation: (Rule) => [
         Rule.required(),
         Rule.min(1).error("ur adding a skill with 0%, really?!!"),

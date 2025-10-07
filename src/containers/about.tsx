@@ -3,7 +3,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Effect } from "@/components/ui/effects";
 import { getStatistics } from "@/constants/statistics";
 import { cn } from "@/lib/utils";
-import { ArrowRightCircle } from "lucide-react";
+import { Brush } from "lucide-react";
 import React from "react";
 
 const AboutSection = () => {
@@ -55,7 +55,7 @@ const AboutSection = () => {
             )}
           >
             <span>Discover skills</span>
-            <ArrowRightCircle className="size-4" />
+            <Brush className="size-4" />
           </a>
         </div>
       </article>

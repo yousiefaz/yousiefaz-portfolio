@@ -6,8 +6,8 @@ export default defineType({
   title: "Languages",
   fields: [
     defineField({
-      name: "lable",
-      title: "Lable",
+      name: "label",
+      title: "Label",
       type: "string",
       validation: (Rule) => [Rule.required().min(3).max(20)],
     }),
