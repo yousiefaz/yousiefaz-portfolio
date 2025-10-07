@@ -18,7 +18,7 @@ export default defineType({
       validation: (Rule) => [
         Rule.required(),
         Rule.min(1).error("ur adding a skill with 0%, really?!!"),
-        Rule.max(100).error("ur not homelander XD"),
+        Rule.max(100).error("ur not Homelander XD"),
       ],
     }),
     defineField({

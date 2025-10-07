@@ -1,7 +1,7 @@
-import { Staistics } from "@/types/interfaces";
+import { Statistics } from "@/types/interfaces";
 
 export function getStatistics() {
-  const staistics: Staistics[] = [
+  const statistics: Statistics[] = [
     {
       label: "Years of experience",
       value: new Date().getFullYear() - 2022,
@@ -11,5 +11,5 @@ export function getStatistics() {
       value: 5,
     },
   ];
-  return { staistics };
+  return { statistics };
 }

@@ -9,7 +9,16 @@ export interface NavLink extends SocialLink {
   title: string;
 }
 
-export interface Staistics {
+export interface Statistics {
   label: string;
   value: number;
+}
+
+export type SkillCategory = "frontend" | "backend" | "tools";
+
+export interface Skill {
+  _id: string;
+  label: string;
+  value: number;
+  category: SkillCategory;
 }

@@ -7,7 +7,7 @@ import { Brush } from "lucide-react";
 import React from "react";
 
 const AboutSection = () => {
-  const { staistics } = getStatistics();
+  const { statistics } = getStatistics();
 
   return (
     <section id="about" className="relative">
@@ -34,7 +34,7 @@ const AboutSection = () => {
           interfaces that enhance the overall user experience.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 items-end">
-          {staistics.map((item, index) => (
+          {statistics.map((item, index) => (
             <div
               key={index}
               className="flex flex-col items-center md:items-start"
