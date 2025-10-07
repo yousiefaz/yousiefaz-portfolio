@@ -22,3 +22,9 @@ export interface Skill {
   value: number;
   category: SkillCategory;
 }
+
+export interface TabItem {
+  value: SkillCategory;
+  icon: LucideIcon;
+  label: string;
+}

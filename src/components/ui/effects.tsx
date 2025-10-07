@@ -25,7 +25,7 @@ export interface EffectsProps
   extends HTMLMotionProps<"figure">,
     VariantProps<typeof effectVariants> {
   animateIn?: boolean;
-  opacity?: number; // 👈 add opacity control (0–1)
+  opacity?: number; 
 }
 
 const Effect = React.forwardRef<HTMLDivElement, EffectsProps>(
@@ -36,7 +36,7 @@ const Effect = React.forwardRef<HTMLDivElement, EffectsProps>(
     <motion.figure
       className={cn(effectVariants({ variant, size, className }))}
       ref={ref}
-      style={{ opacity }} // 👈 use opacity dynamically
+      style={{ opacity }} 
       initial={animateIn ? { scale: 0, opacity: 0 } : { scale: 1, opacity }}
       animate={{ scale: 1, opacity }}
       transition={animateIn ? { duration: 1.7, ease: "easeOut" } : undefined}

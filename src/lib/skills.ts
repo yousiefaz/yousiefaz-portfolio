@@ -12,4 +12,4 @@ export async function getSkills(category: SkillCategory) {
   return data as Skill[];
 }
 
-// # | order(value desc) #      # ]{ #
+//# ]# | order(value desc) #      # ]{ #

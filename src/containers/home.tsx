@@ -44,7 +44,7 @@ const HomeSection = () => {
 
         <div className="flex items-center gap-2 py-4">
           <a href="#projects" className={buttonVariants({ size: "lg" })}>
-            <span>my works</span>
+            <span>my work</span>
             <ArrowRightCircle className="size-4" />
           </a>
           <a
@@ -61,9 +61,9 @@ const HomeSection = () => {
       {/* Presentation */}
 
       {/* Image */}
-      <div className="md:col-span-5 grid place-content-center -z-10">
+      <div className="md:col-span-5 grid place-content-center">
         <div className="relative flex items-center justify-center size-80 md:size-96">
-          <Effect className="opacity-75 size-full animate-float" opacity={1} />
+          <Effect className="size-full" opacity={1} />
           <Effect
             variant="square"
             size="sm"
