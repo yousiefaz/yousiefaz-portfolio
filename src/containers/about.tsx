@@ -10,7 +10,7 @@ const AboutSection = () => {
   const { statistics } = getStatistics();
 
   return (
-    <section id="about" className="relative">
+    <section id="about" className="relative container">
       <Effect
         className="-left-32 md:-left-84 md:-top-12"
         animateIn={false}
