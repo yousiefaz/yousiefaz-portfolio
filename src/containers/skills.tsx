@@ -13,7 +13,7 @@ const SkillsSection = async () => {
   return (
     <section id="skills" className="relative container space-y-6">
       {/* <Effect
-        className="-right-20 bottom-8 md:-righ-36 md:bottom-2"
+        className="-right-20 bottom-8 md:-right-36 md:bottom-2"
         opacity={1}
         animateIn={false}
       /> */}
