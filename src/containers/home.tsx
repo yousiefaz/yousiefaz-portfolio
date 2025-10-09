@@ -7,7 +7,10 @@ import React from "react";
 
 const HomeSection = () => {
   return (
-    <section id="home" className="grid container md:grid-cols-12 items-center gap-6">
+    <section
+      id="home"
+      className="grid container md:grid-cols-12 items-center gap-6"
+    >
       {/* Social links */}
       <ul className="flex md:flex-col gap-6 items-center size-fit mx-auto py-2 md:py-8 px-8 md:px-2 border  rounded-3xl">
         {socialLinks.map((link, index) => {
@@ -38,7 +41,10 @@ const HomeSection = () => {
           technologies, turning ideas into seamless digital experiences.
         </p>
 
-        <p className="text-sm md:text-base italic text-center md:text-start text-primary cursor-default">
+        <p
+          className="text-sm md:text-base italic text-center md:text-start text-primary cursor-default"
+          title="it's art do not touch it"
+        >
           &ldquo; Made with love &lt;3 &rdquo;
         </p>
 
@@ -61,7 +67,7 @@ const HomeSection = () => {
       {/* Presentation */}
 
       {/* Image */}
-      <div className="md:col-span-5 grid place-content-center">
+      <div className="md:col-span-5 grid place-content-center ">
         <div className="relative flex items-center justify-center size-80 md:size-96">
           <Effect className="size-full" opacity={1} />
           <Effect

@@ -28,13 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="scroll-smooth overflow-x-hidden overflow-y-auto selection:bg-primary selection:text-white"
-    >
+    <html lang="en" className="selection:bg-primary selection:text-white">
       <body
         className={cn(
-          "relative text-muted-foreground overflow-x-hidden overflow-y-hidden",
+          "relative text-muted-foreground",
           geistSans.variable,
           geistMono.variable
         )}
@@ -45,10 +42,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           <MobileNav />
-          <main className="pt-0 md:pt-10 mt-0">{children}</main>
-          <Footer />
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>

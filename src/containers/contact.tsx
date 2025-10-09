@@ -6,7 +6,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="relative container py-20">
+    <section id="contact" className="relative container pt-20">
       <div className="bg-card bg-opacity-80 backdrop-blur-md border rounded-xl p-6 flex flex-col items-center gap-y-6 md:gap-y-12">
         <Effect
           variant="ball"

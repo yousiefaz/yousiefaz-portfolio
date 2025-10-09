@@ -117,10 +117,10 @@
     @apply border-border outline-ring/50;
   }
   html {
-    @apply overflow-y-scroll;
+    @apply scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-y-scroll;
   }
 }
 

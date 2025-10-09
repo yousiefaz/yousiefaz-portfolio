@@ -12,7 +12,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="relative container">
       <Effect
-        className="-left-32 md:-left-84 top-50 md:top-20"
+        className="-left-32 md:-left-84 top-50 md:top-20 animate-float-2"
         animateIn={false}
         opacity={0.5}
       />

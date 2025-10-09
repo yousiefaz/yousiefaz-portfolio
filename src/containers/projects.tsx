@@ -9,7 +9,7 @@ const ProjectsSection = async () => {
   return (
     <section id="projects" className="relative container space-y-6">
       <Effect
-        className=" top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]"
+        className=" top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] animate-float-3"
         animateIn={false}
         opacity={0.5}
       />
