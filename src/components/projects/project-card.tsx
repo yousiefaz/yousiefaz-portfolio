@@ -13,8 +13,8 @@ const ProjectCard: FC<ProjectCardProps> = ({ imageUrl, title }) => {
       <Image
         src={imageUrl}
         alt={title}
-        width={720}
-        height={720}
+        width={480}
+        height={480}
         className="size-full rounded-sm group-hover:scale-105 transition duration-300 ease-in-out"
       />
       <h3 className="absolute bottom-2 start-2 capitalize text-foreground truncate group-hover:text-primary">

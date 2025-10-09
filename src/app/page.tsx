@@ -3,6 +3,7 @@ import AboutSection from "@/containers/about";
 import ContactSection from "@/containers/contact";
 import ProjectsSection from "@/containers/projects";
 import SkillsSection from "@/containers/skills";
+import ScrollToTop from "@/components/scroll-to-top";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />
+      <ScrollToTop />
     </div>
   );
 }

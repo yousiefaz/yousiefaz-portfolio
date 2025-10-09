@@ -30,11 +30,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="scroll-smooth selection:bg-primary selection:text-white"
+      className="scroll-smooth overflow-x-hidden overflow-y-auto selection:bg-primary selection:text-white"
     >
       <body
         className={cn(
-          "relative text-muted-foreground overflow-x-hidden overflow-y-scroll",
+          "relative text-muted-foreground overflow-x-hidden overflow-y-hidden",
           geistSans.variable,
           geistMono.variable
         )}

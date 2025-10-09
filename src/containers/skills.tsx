@@ -38,7 +38,7 @@ const SkillsSection = async () => {
           {/* tabs list **/}
 
           {/* tabs content **/}
-          <div className="md:col-span-2 bg-background/50">
+          <div className="md:col-span-2 rounded-md bg-background/50">
             <TabsContent value="frontend">
               <SkillsContainer data={frontendSkills} label="frontend" />
             </TabsContent>

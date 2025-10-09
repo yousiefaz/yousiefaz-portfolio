@@ -67,17 +67,17 @@ const HomeSection = () => {
           <Effect
             variant="square"
             size="sm"
-            className="top-[7%] left-[24%] -rotate-4 animate-float"
+            className="top-[7%] left-[24%] -rotate-4 animate-float-1"
           />
           <Effect
             variant="square"
             size="sm"
-            className="top-[50%] left-[2%] -rotate-42 animate-float"
+            className="top-[50%] left-[2%] -rotate-42 animate-float-2"
           />
           <Effect
             variant="square"
             size="sm"
-            className="bottom-[4%] left-[25%] rotate-30 animate-float"
+            className="bottom-[4%] left-[25%] rotate-30 animate-float-3"
           />
           <Image
             src="/images/profile-pic.jpg"
