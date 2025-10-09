@@ -4,7 +4,7 @@ export function getStatistics() {
   const statistics: Statistics[] = [
     {
       label: "Years of experience",
-      value: new Date().getFullYear() - 2022,
+      value: new Date().getFullYear() - 2021,
     },
     {
       label: "Completed projects",

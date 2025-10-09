@@ -34,7 +34,7 @@ export default function RootLayout({
     >
       <body
         className={cn(
-          "relative text-muted-foreground overflow-x-hidden",
+          "relative text-muted-foreground overflow-x-hidden overflow-y-scroll",
           geistSans.variable,
           geistMono.variable
         )}

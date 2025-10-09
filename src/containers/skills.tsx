@@ -1,10 +1,10 @@
 import SectionTitle from "@/components/section-title";
 import SkillsContainer from "@/components/skills/skills-container";
+import { Effect } from "@/components/ui/effects";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabItems } from "@/constants/tab-items";
 import { getSkills } from "@/lib/skills";
 import React from "react";
-// import { Effect } from "@/components/ui/effects";
 
 const SkillsSection = async () => {
   const frontendSkills = await getSkills("frontend");
@@ -13,9 +13,9 @@ const SkillsSection = async () => {
   return (
     <section id="skills" className="relative container space-y-6">
       {/* <Effect
-        className="-right-20 bottom-8 md:-right-36 md:bottom-2"
-        opacity={1}
+        className="-right-40 md:-right-90 top-60 md:top-120"
         animateIn={false}
+        opacity={0.3}
       /> */}
       <SectionTitle
         title="skills"

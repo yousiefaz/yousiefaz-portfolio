@@ -2,7 +2,7 @@
 
 import { Skill } from "@/types/interfaces";
 import { FC, useEffect, useState } from "react";
-import { Progress } from "../ui/progress";
+import { Progress } from "@/components/ui/progress";
 import { motion } from "framer-motion";
 
 const SkillItem: FC<{ item: Skill }> = ({ item }) => {

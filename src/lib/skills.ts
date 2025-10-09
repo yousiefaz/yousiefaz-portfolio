@@ -3,7 +3,7 @@ import { Skill, SkillCategory } from "@/types/interfaces";
 
 export async function getSkills(category: SkillCategory) {
   const query = `
-    *[_type == "skills" && category == "${category}"]{
+    *[_type == "skills" && category == "${category}"] | order(label asc){
         _id, label, value, category
     }[]
     `;

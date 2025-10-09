@@ -14,7 +14,7 @@ const SkillsContainer: FC<SkillsContainerProps> = ({ data, label }) => {
         {label}
       </h2>
       <div className="px-6 py-4 space-y-6">
-        {data.map((item, index) => (
+        {data.map((item) => (
           <SkillItem key={item._id} item={item} />
         ))}
       </div>
