@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="container space-y-24 pt-32 pb-16 md:pt-48 md:pb-24">
+      <div className="container space-y-28 pt-28 md:pt-48 pb-16 md:pb-24">
         <HomeSection />
         <AboutSection />
         <SkillsSection />

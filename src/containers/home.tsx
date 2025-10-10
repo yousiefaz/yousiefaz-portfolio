@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { Effect } from "@/components/ui/effects";
 import { socialLinks } from "@/constants/social-links";
+import { cn } from "@/lib/utils";
 import { ArrowRightCircle, Download } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -29,7 +30,10 @@ const HomeSection = () => {
       {/* Presentation */}
       <div className="md:col-span-6 flex flex-col items-center md:items-start gap-y-4">
         <h2 className="text-3xl md:text-5xl font-bold text-foreground capitalize">
-          hello, i&apos;m yousief.
+          hello, i&apos;m{" "}
+          <span className="text-primary cursor-default" title="Yaz">
+            yousief
+          </span>
         </h2>
 
         <h5 className="text-xl md:text-2xl font-semibold capitalize">
@@ -37,8 +41,9 @@ const HomeSection = () => {
         </h5>
 
         <p className="leading-7 md:leading-8 md:text-lg md:max-w-[85%] text-center md:text-start">
-          I make interactive and responsive web applications using modern
-          technologies, turning ideas into seamless digital experiences.
+          I build experiences that don&apos;t just work — they speak. Every
+          pixel, every line of code, every detail reflects a story I&apos;m
+          still writing — mine.
         </p>
 
         <p
@@ -49,13 +54,22 @@ const HomeSection = () => {
         </p>
 
         <div className="flex items-center gap-2 py-4">
-          <a href="#projects" className={buttonVariants({ size: "lg" })}>
+          <a
+            href="#projects"
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "px-4 md:px-8 h-9 md:h-11"
+            )}
+          >
             <span>my work</span>
             <ArrowRightCircle className="size-4" />
           </a>
           <a
             href="/yousiefaz-cv.pdf"
-            className={buttonVariants({ variant: "outline", size: "lg" })}
+            className={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "px-4 md:px-8 h-9 md:h-11"
+            )}
             target="_blank"
             download={true}
           >
