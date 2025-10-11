@@ -28,7 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="selection:bg-primary selection:text-white">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="selection:bg-primary selection:text-white"
+    >
       <body
         className={cn(
           "relative text-muted-foreground",
