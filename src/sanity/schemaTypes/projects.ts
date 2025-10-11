@@ -1,4 +1,4 @@
-import { UrlRegExp } from "@/lib/utils";
+// import { UrlRegExp } from "@/lib/utils";
 import { defineField, defineType } from "sanity";
 
 export default defineType({
@@ -38,7 +38,7 @@ export default defineType({
       name: "demoLink",
       title: "Demo Link",
       type: "string",
-      validation: (Rule) => Rule.regex(UrlRegExp),
+      // validation: (Rule) => Rule.regex(UrlRegExp),
     }),
 
     defineField({

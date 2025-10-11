@@ -1,6 +1,5 @@
 import SectionTitle from "@/components/section-title";
 import SkillsContainer from "@/components/skills/skills-container";
-import { Effect } from "@/components/ui/effects";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TabItems } from "@/constants/tab-items";
 import { getSkills } from "@/lib/skills";
