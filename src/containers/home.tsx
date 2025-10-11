@@ -36,7 +36,10 @@ const HomeSection = () => {
           </span>
         </h2>
 
-        <h5 className="text-xl md:text-2xl font-semibold capitalize">
+        <h5
+          className="text-xl md:text-2xl font-semibold capitalize cursor-default"
+          title="UI/UX Enthusiast"
+        >
           frontend developer
         </h5>
 
@@ -81,30 +84,34 @@ const HomeSection = () => {
       {/* Presentation */}
 
       {/* Image */}
-      <div className="md:col-span-5 grid place-content-center ">
+      <div className="md:col-span-5 grid place-content-center">
         <div className="relative flex items-center justify-center size-80 md:size-96">
-          <Effect className="size-full" opacity={1} />
+          <Effect className="size-full" opacity={0.8} />
           <Effect
-            variant="square"
+            variant="ball"
             size="sm"
             className="top-[7%] left-[24%] -rotate-4 animate-float-1"
+            opacity={0.7}
           />
           <Effect
-            variant="square"
+            variant="ball"
             size="sm"
             className="top-[50%] left-[2%] -rotate-42 animate-float-2"
+            opacity={0.5}
           />
           <Effect
-            variant="square"
+            variant="ball"
             size="sm"
             className="bottom-[4%] left-[25%] rotate-30 animate-float-3"
+            opacity={0.9}
           />
           <Image
-            src="/images/profile-pic.jpg"
+            src="/images/profile-pic-3dd.png"
             alt="profile picture"
             width={500}
             height={500}
-            className="object-fill rounded-full border-2 size-[80%] ring-4 ring-primary ring-offset-4 ring-offset-background"
+            className="object-contain rounded-full border-2 size-[80%] ring-4 ring-primary ring-offset-4 ring-offset-background"
+            title="AURA"
           />
         </div>
       </div>

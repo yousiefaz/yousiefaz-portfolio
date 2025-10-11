@@ -8,7 +8,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 z-50 p-2 w-full items-center justify-center bg-background/60 backdrop-blur-md">
       <div className="container py-3 flex items-center justify-between">
         <Logo />
-        <nav className="hidden md:flex items-center gap-x-4">
+        <nav className="hidden md:flex items-center gap-x-6">
           {navLinks.map((link, index) => (
             <a
               key={index}
