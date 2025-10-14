@@ -106,7 +106,7 @@ const HomeSection = () => {
             opacity={0.9}
           />
           <Image
-            src="/images/profile-pic-3d.png"
+            src="/images/profile-pic.png"
             alt="profile picture"
             width={500}
             height={500}
