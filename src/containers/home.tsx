@@ -1,9 +1,13 @@
+"use client";
+
 import { buttonVariants } from "@/components/ui/button";
 import { Effect } from "@/components/ui/effects";
 import { socialLinks } from "@/constants/social-links";
 import { cn } from "@/lib/utils";
 import { ArrowRightCircle, Download } from "lucide-react";
 import Image from "next/image";
+import TypingText from "@/components/ui/shadcn-io/typing-text";
+
 import React from "react";
 
 const HomeSection = () => {
@@ -13,7 +17,7 @@ const HomeSection = () => {
       className="grid container md:grid-cols-12 items-center gap-6"
     >
       {/* Social links */}
-      <ul className="flex md:flex-col gap-6 items-center size-fit mx-auto py-2 md:py-8 px-8 md:px-2 border  rounded-3xl">
+      <ul className="flex md:flex-col gap-6 items-center size-fit mx-auto py-2 md:py-8 px-8 md:px-2 border rounded-3xl">
         {socialLinks.map((link, index) => {
           const { href, icon: Icon } = link;
           return (
@@ -29,21 +33,35 @@ const HomeSection = () => {
 
       {/* Presentation */}
       <div className="md:col-span-6 flex flex-col items-center md:items-start gap-y-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-foreground capitalize">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground capitalize">
           hello, i&apos;m{" "}
-          <span className="text-primary cursor-default" title="Yaz">
+          <TypingText
+            text={[
+              "Yousief",
+              "Frontend Developer",
+              "Graphic Designer",
+              "UI/UX Enthusiast",
+              "Creative Thinker",
+            ]}
+            title="Aka Yaz"
+            typingSpeed={100}
+            pauseDuration={3000}
+            showCursor={true}
+            cursorCharacter="|"
+            className="text-3xl md:text-4xl font-bold cursor-default"
+            textColors={["#e11d48"]}
+            variableSpeed={{ min: 50, max: 120 }}
+          />
+          {/* <span className="text-primary cursor-default" title="Yaz">
             yousief
-          </span>
+          </span> */}
         </h2>
 
-        <h5
-          className="text-xl md:text-2xl font-semibold capitalize cursor-default"
-          title="UI/UX Enthusiast"
-        >
-          frontend developer
+        <h5 className="text-xl md:text-xl font-semibold capitalize">
+          Passionate About User-Centered Design & Insight-Driven Solutions
         </h5>
 
-        <p className="leading-7 md:leading-8 md:text-lg md:max-w-[85%] text-center md:text-start">
+        <p className="leading-7 md:leading-8 md:text-lg md:max-w-[85%] text-center md:text-start cursor-default">
           I build experiences that don&apos;t just work — they speak. Every
           pixel, every line of code, every detail reflects a story I&apos;m
           still writing — mine.

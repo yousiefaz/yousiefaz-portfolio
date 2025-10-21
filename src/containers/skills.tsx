@@ -11,11 +11,6 @@ const SkillsSection = async () => {
   const Tools = await getSkills("tools");
   return (
     <section id="skills" className="relative container space-y-6">
-      {/* <Effect
-        className="-right-40 md:-right-90 top-60 md:top-120"
-        animateIn={false}
-        opacity={0.3}
-      /> */}
       <SectionTitle
         title="skills"
         description="my core technical expertise and tools."
