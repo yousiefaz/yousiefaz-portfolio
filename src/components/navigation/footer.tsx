@@ -11,7 +11,7 @@ const Footer = () => {
         <p className="capitalize text-sm">
           {`© ${currentYear} Yousiefaz — by `}
           <span
-            className="font-semibold text-primary cursor-default"
+            className="font-bold text-primary cursor-default"
             title="it's me"
           >
             Yaz
