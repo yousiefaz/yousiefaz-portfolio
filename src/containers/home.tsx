@@ -49,12 +49,10 @@ const HomeSection = () => {
             showCursor={true}
             cursorCharacter="|"
             className="text-3xl md:text-4xl font-bold cursor-default"
-            textColors={["#e11d48"]}
+            textColors={["#f43f5e"]}
+            // textColors={["#e11d48"]}
             variableSpeed={{ min: 50, max: 120 }}
           />
-          {/* <span className="text-primary cursor-default" title="Yaz">
-            yousief
-          </span> */}
         </h2>
 
         <h5 className="text-xl md:text-xl font-semibold capitalize">
