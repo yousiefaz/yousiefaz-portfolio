@@ -43,7 +43,6 @@ const HomeSection = () => {
               "UI/UX Enthusiast",
               "Creative Thinker",
             ]}
-            title="Aka Yaz"
             typingSpeed={100}
             pauseDuration={3000}
             showCursor={true}

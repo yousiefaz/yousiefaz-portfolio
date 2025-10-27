@@ -1,23 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import MobileNav from "@/components/navigation/mobile-nav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const raleway = Raleway({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-raleway",
+  weight: ["400", "500", "600", "700"], // You can adjust or add more
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Yousiefaz",
-  description: "Portfolio",
+  title: "Yousiefaz | Frontend Developer",
+  description:
+    "Frontend Developer crafting efficient, user-focused web solutions with clean design and smart functionality.",
 };
 
 export default function RootLayout({
@@ -33,9 +31,8 @@ export default function RootLayout({
     >
       <body
         className={cn(
-          "relative text-muted-foreground",
-          geistSans.variable,
-          geistMono.variable
+          "relative text-muted-foreground font-sans",
+          raleway.variable
         )}
       >
         <ThemeProvider

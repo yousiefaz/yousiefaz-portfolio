@@ -10,7 +10,7 @@ const SkillItem: FC<{ item: Skill }> = ({ item }) => {
 
   useEffect(() => {
     let current = 0;
-    const step = item.value / 40;
+    const step = item.value / 25;
     const interval = setInterval(() => {
       current += step;
       if (current >= item.value) {
@@ -27,7 +27,7 @@ const SkillItem: FC<{ item: Skill }> = ({ item }) => {
       className="grid gap-2"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="flex items-center justify-between gap-8 px-4">
         <h4 className="capitalize text-foreground">{item.label}</h4>
