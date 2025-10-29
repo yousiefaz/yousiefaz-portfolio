@@ -58,7 +58,7 @@ const HomeSection = () => {
           Passionate About User-Centered Design & Insight-Driven Solutions
         </h5>
 
-        <p className="leading-7 md:leading-8 md:text-lg md:max-w-[85%] text-center md:text-start cursor-default">
+        <p className="leading-7 md:leading-8 md:text-lg md:max-w-[85%] text-center md:text-start">
           I build experiences that don&apos;t just work — they speak. Every
           pixel, every line of code, every detail reflects a story I&apos;m
           still writing — mine.
