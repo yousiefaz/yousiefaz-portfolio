@@ -37,6 +37,11 @@ export interface SanityImage {
   };
 }
 
+export interface CarouselProps {
+  images: SanityImage[];
+  className?: string;
+}
+
 export interface Project {
   _id: string;
   title: string;
