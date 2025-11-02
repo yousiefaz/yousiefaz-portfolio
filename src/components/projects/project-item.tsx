@@ -40,7 +40,10 @@ const ProjectItem: FC<ProjectItemProps> = ({ project }) => {
             </DialogTitle>
           </DialogHeader>
           <div className="grid lg:grid-cols-2 gap-4 p-4 max-h-[85vh] overflow-x-hidden overflow-y-auto">
-            <Carousel images={project.images} className="size-6" />
+            <Carousel
+              images={project.images.map((img) => urlFor(img).url())}
+              className="size-6"
+            />
             <div className="space-y-4 lg:space-y-6 lg:p-4 size-full">
               <p className="text-sm">{project.description}</p>
               <Separator />

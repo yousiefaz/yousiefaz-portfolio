@@ -48,3 +48,8 @@ export interface Project {
   publishedAt: Date;
   isResponsive: boolean;
 }
+
+interface CarouselProps {
+  images: string[]; // URLs
+  className?: string;
+}
