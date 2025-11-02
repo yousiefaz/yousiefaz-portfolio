@@ -54,7 +54,7 @@ export interface Project {
   isResponsive: boolean;
 }
 
-interface CarouselProps {
-  images: string[]; // URLs
+export interface CarouselProps {
+  images: string[];
   className?: string;
 }
