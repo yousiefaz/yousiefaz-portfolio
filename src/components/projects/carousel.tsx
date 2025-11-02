@@ -4,16 +4,13 @@ import { urlFor } from "@/sanity/lib/image";
 import { Loader } from "lucide-react";
 import Image from "next/image";
 import { FC, Suspense, useState } from "react";
-import { Image as SanityImage } from "sanity";
-
-interface CarouselProps {
-  images: SanityImage[];
-}
+import { CarouselProps } from "@/types/interfaces";
 
 const Carousel: FC<CarouselProps> = ({ images }) => {
   const [currentImage, setCurrentImage] = useState<string>(
     urlFor(images[0]).url()
   );
+
   return (
     <div className="space-y-2">
       <Image
