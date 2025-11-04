@@ -13,7 +13,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Yousiefaz | Frontend Developer",
+  title: "Yousiefaz Portfolio",
   description:
     "Frontend Developer crafting efficient, user-focused web solutions with clean design and smart functionality.",
 };

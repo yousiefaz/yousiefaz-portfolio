@@ -1,13 +1,24 @@
-// import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import YazLogo from "@/assets/logos/yaz-logo.svg";
 
 const Logo = () => {
   return (
-    <Link href="/" className="flex flex-row items-center gap-3">
-      {/* <Image src="/logos/portfolio.png" alt="logo" width={40} height={40} /> */}
+    <Link href="/" className="flex items-center gap-3 group">
+      {/* SVG logo */}
+      <YazLogo
+        className="w-12 h-12 fill-black dark:fill-white 
+                   transition-colors duration-700 ease-in-out 
+                   group-hover:fill-primary dark:group-hover:fill-primary/80"
+        title="I made it"
+      />
+
+      {/* Text */}
       <h1
-        className="font-bold text-2xl hover:text-primary capitalize"
+        className="font-bold text-2xl capitalize text-black dark:text-white 
+                   transition-colors duration-700 ease-in-out 
+                   group-hover:text-primary dark:group-hover:text-primary/80"
         title="Aka Yaz"
       >
         yousiefaz
