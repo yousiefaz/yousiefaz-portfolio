@@ -32,7 +32,7 @@ const HomeSection = () => {
       {/* Social links */}
 
       {/* Presentation */}
-      <div className="md:col-span-6 flex flex-col items-center md:items-start gap-y-4">
+      <div className="md:col-span-6 flex flex-col items-center md:items-start gap-y-4 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground capitalize">
           hello, i&apos;m{" "}
           <TypingText
