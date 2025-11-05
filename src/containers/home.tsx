@@ -14,7 +14,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="grid container md:grid-cols-12 items-center gap-6"
+      className="max-w-[1156px] mx-auto grid md:grid-cols-12 items-center gap-6"
     >
       {/* Social links */}
       <ul className="flex md:flex-col gap-6 items-center size-fit mx-auto py-2 md:py-8 px-8 md:px-2 border rounded-3xl">
@@ -54,7 +54,7 @@ const HomeSection = () => {
           />
         </h2>
 
-        <h5 className="text-xl md:text-xl font-semibold capitalize">
+        <h5 className="text-xl text-center md:text-left md:text-xl font-semibold capitalize">
           Passionate About User-Centered Design & Insight-Driven Solutions
         </h5>
 
