@@ -1,20 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import YazLogo from "@/assets/logos/yaz-logo.svg";
+// import YazLogo from "@/assets/logos/yaz-logo.svg";
 
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center gap-3 group">
-      {/* SVG logo */}
-      <YazLogo
-        className="w-12 h-12 fill-black dark:fill-white 
+      {/* <YazLogo
+        className="size-10 fill-black dark:fill-white 
                    transition-colors duration-700 ease-in-out 
                    group-hover:fill-primary dark:group-hover:fill-primary/80"
-        title="I made it"
-      />
+        title="I made this logo myself!"
+      /> */}
 
-      {/* Text */}
       <h1
         className="font-bold text-2xl capitalize text-black dark:text-white 
                    transition-colors duration-700 ease-in-out 
