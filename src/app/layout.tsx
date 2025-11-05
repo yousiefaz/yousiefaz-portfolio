@@ -8,7 +8,7 @@ import MobileNav from "@/components/navigation/mobile-nav";
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
-  weight: ["400", "500", "600", "700"], // You can adjust or add more
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
