@@ -14,7 +14,7 @@ const HomeSection = () => {
   return (
     <section
       id="home"
-      className="max-w-[1156px] mx-auto grid md:grid-cols-12 items-center gap-6"
+      className="relative container grid md:grid-cols-12 items-center gap-6"
     >
       {/* Social links */}
       <ul className="flex md:flex-col gap-6 items-center size-fit mx-auto py-2 md:py-8 px-8 md:px-2 border rounded-3xl">
