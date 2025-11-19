@@ -1,13 +1,16 @@
-import { getSkills } from "@/lib/skills";
+// import { getSkills } from "@/lib/skills";
+import { getProjects } from "@/lib/projects"; // ⬅️ IMPORT PROJECTS
 import { Statistics } from "@/types/interfaces";
 
 export async function getStatistics() {
-  const frontendSkills = await getSkills("frontend");
-  const backendSkills = await getSkills("backend");
-  const tools = await getSkills("tools");
+  // const frontendSkills = await getSkills("frontend");
+  // const backendSkills = await getSkills("backend");
+  // const tools = await getSkills("tools");
 
-  const totalSkills: number =
-    frontendSkills.length + backendSkills.length + tools.length - 13;
+  // const totalSkills =
+  //   frontendSkills.length + backendSkills.length + tools.length;
+
+  const projects = await getProjects();
 
   const statistics: Statistics[] = [
     {
@@ -16,8 +19,9 @@ export async function getStatistics() {
     },
     {
       label: "Completed projects",
-      value: totalSkills,
+      value: projects.length + 4,
     },
   ];
+
   return { statistics };
 }
