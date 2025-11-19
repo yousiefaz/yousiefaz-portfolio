@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import MobileNav from "@/components/navigation/mobile-nav";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           raleway.variable
         )}
       >
+        <SpeedInsights />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
