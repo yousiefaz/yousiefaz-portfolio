@@ -17,6 +17,28 @@ export const metadata: Metadata = {
   title: "Yousiefaz Portfolio",
   description:
     "Frontend Developer crafting efficient, user-focused web solutions with clean design and smart functionality.",
+
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+
+  openGraph: {
+    title: "Yousiefaz Portfolio",
+    description:
+      "Frontend Developer crafting efficient, user-focused web solutions with clean design and smart functionality.",
+    url: "https://www.yousiefaz.online",
+    siteName: "Yousiefaz",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Yousiefaz Portfolio Preview",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
