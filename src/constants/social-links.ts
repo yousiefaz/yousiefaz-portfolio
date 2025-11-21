@@ -1,5 +1,5 @@
 import { SocialLink } from "@/types/interfaces";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, MessageCircleMore } from "lucide-react";
 
 export const socialLinks: SocialLink[] = [
   {
@@ -9,5 +9,9 @@ export const socialLinks: SocialLink[] = [
   {
     href: "https://www.linkedin.com/in/yousiefaz/",
     icon: Linkedin,
+  },
+  {
+    href: "https://wa.me/+201032377761",
+    icon: MessageCircleMore,
   },
 ];
