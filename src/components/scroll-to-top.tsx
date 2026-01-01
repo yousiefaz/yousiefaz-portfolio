@@ -16,7 +16,7 @@ const ScrollToTop = () => {
     <Button
       size="icon"
       className={cn(
-        "fixed bottom-12 md:bottom-8 right-4 md:right-8 end-6 md:end-12 duration-300 ease-in-out z-[99]",
+        "fixed bottom-20 md:bottom-8 right-4 md:right-8 end-6 md:end-12 duration-300 ease-in-out z-[99]",
         !isOverScreen && "opacity-0 translate-y-6 pointer-events-none",
         ""
       )}
