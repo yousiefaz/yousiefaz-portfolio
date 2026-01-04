@@ -15,7 +15,7 @@ export async function getStatistics() {
   const statistics: Statistics[] = [
     {
       label: "Years of experience",
-      value: new Date().getFullYear() - 2021,
+      value: new Date().getFullYear() - 2023,
     },
     {
       label: "Completed projects",
